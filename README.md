@@ -18,25 +18,29 @@ General Requirements
 --------------------
 
 * PHP 5.3+
+* ZF2 (ZendFramework 2)
 
 
 Specific Requirements
 ---------------------
 
-* None
+### Swigg\Component\Filter\Markdown
+* [PHP Markdown Extra](http://michelf.com/projects/php-markdown/extra/)
 
 
 List of Bridges
 ---------------
-
-* None
+* Twig
+	Additional functionality for Twig
 
 
 List of Bundles
 ---------------
-* None
+* TwigBundle
+	Adds the aditional functionality provided by the Twig bridge into Twig
 
 
 List of Components
 ------------------
-* None
+* Filter\Markdown
+	Adds a filter to transform Markdown markup into HTML

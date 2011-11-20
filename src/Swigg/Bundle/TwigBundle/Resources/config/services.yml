@@ -1,0 +1,18 @@
+parameters:
+#    swigg_twig.example.class: Swigg\Bundle\TwigBundle\Example
+    swigg_twig.markdown_extension_class: Swigg\Bridge\Twig\Extension\Markdown
+    swigg_twig.markdown_filter_class: Swigg\Component\Filter\Markdown
+
+services:
+    swigg_twig.markdown_filter:
+        class: %swigg_twig.markdown_filter_class%
+
+    swigg_twig.markdown_extension:
+        class: %swigg_twig.markdown_extension_class%
+        arguments: [@swigg_twig.markdown_filter]
+        tags:
+            - { name: twig.extension }
+            
+#    swigg_twig.example:
+#        class: %swigg_twig.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]

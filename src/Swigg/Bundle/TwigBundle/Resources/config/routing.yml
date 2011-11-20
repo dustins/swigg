@@ -1,0 +1,3 @@
+#SwiggTwigBundle_homepage:
+#    pattern:  /hello/{name}
+#    defaults: { _controller: SwiggTwigBundle:Default:index }
