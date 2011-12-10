@@ -44,3 +44,5 @@ List of Components
 ------------------
 * Filter\Markdown
 	Adds a filter to transform Markdown markup into HTML
+* Authentication\Storage\Cookie
+    A cookie based storage implementation based on [A Secure Cookie Protocol(pdf)](http://www.cse.msu.edu/~alexliu/publications/Cookie/cookie.pdf)
